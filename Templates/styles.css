@@ -1,0 +1,323 @@
+nav li {
+    margin-right: 60px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+nav a{
+    text-decoration: none;
+    color: #121830;
+
+}
+nav a:visited {
+    color: #121830;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-nav{
+    width: 90%;
+    height: 60px;
+    background-color: white;
+    top: 60px;
+    left: 100px;
+    position: absolute;
+}
+
+.smartsync img{
+    left: 50px;
+    width: 170px;
+    height: 80px;
+    position: absolute;
+}
+
+.nav{
+    width: auto;
+    height:auto;
+    left: 900px;
+    font-family: 'Roboto Condensed';
+    color: #121830;
+    font-weight: 400;
+    font-size: 1.8em;
+    bottom: 4px;
+    position: absolute;
+}
+
+.user{
+    width: auto;
+    height:auto;
+    left: 1200px;
+    font-family: 'Roboto Condensed';
+    color: #121830;
+    font-weight: 400;
+    font-size: 1.8em;
+    bottom: 4px;
+    position: absolute;
+}
+
+.profile-icon{
+    font-size: 48px;
+    width: auto;
+    height:auto;
+    left: 1350px;
+    color: #121830;
+    bottom: 4px;
+    position: absolute;
+}
+
+.container-inputs{
+    width: 500px;
+    height: 580px;
+    top: 170px;
+    left: 100px;
+    background-color:white;
+    position: absolute;
+}
+
+.generate-container-presentation{
+    width: 880px;
+    height: 580px;
+    top: 170px;
+    left: 650px;
+    background-color:white;
+    position: absolute;
+}
+.view-container-presentation{
+    width: 880px;
+    height: 580px;
+    top: 170px;
+    left: 380px;
+    background-color:white;
+    position: absolute;
+}
+.slideshow-presentation{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.slideshow-presentation img{
+    border: 1px solid;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.inputs{
+    width: 90%;
+    height: 90%;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+.container-inputs label{
+    font-family: 'Roboto';
+    font-size: 20px;
+    text-indent: 5px;
+    font-weight: 500;
+
+    color: #121830;
+}
+
+input{
+    width: 100%;
+    height: 40px;
+    background-color: #dce0fc;
+    border-width: 0;
+    border-radius: 10px;
+    font-family: 'Roboto';
+
+    font-size: 20px;
+    text-indent: 5px;
+    margin-top: 5px;;
+    margin-bottom: 10px;
+}
+textarea{
+    border-radius: 10px;
+    font-family: 'Roboto';
+    font-size: 20px;
+    text-indent: 5px;
+    margin-top: 5px;;
+    margin-bottom: 7px;
+    background-color: #dce0fc;
+    border-width: 0;
+    resize: none;
+}
+
+.container-inputs button{
+    width: 230px;
+    height: 50px;
+    font-family: 'Roboto';
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 25px;
+    margin-left: 100px;
+    border-width: 0;
+    background-color: #121830;
+    color: white;
+
+}
+.generate-container-presentation button, .view-container-presentation button{
+    width: 230px;
+    height: 50px;
+    font-family: 'Roboto';
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 25px;
+    margin-left: 330px;
+    border-width: 0;
+    background-color: #121830;
+    color: white;
+}
+* {box-sizing:border-box}
+.mySlides {
+    display:none;
+  }
+  .mySlides:first-child {
+    display: block; /* Display the first slide */
+}
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    background-color: #717171;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 41px;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  .dots{
+    bottom: 100px;
+    left: 415px;
+    position: absolute;
+  }
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 50px;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+    .latestPresentations{
+        width: 90%;
+        height: 500px;
+        top:180px;
+        left: 100px;
+        position: absolute;
+        display: grid;
+    }
+
+    .latest{
+        width: 400px;
+        height: 50px;
+        margin-left: 50px;
+        margin-top: 20px;
+        font-family: 'Roboto';
+        font-size: 36px;
+        text-indent: 5px;
+        font-weight: 600;
+        color: #121830;
+
+    }
+
+    .btnCreate{
+        width: auto;
+        height: auto;
+        margin-top: 5px;
+        right: 110px;
+        position: absolute;
+        transition: transform 0.3s ease-in-out;
+
+    }
+
+    .btnCreate button{
+        width: 350px;
+        height: 50px;
+        font-family: 'Roboto';
+        font-size: 24px;
+        border-radius: 25px;
+        border-width: 0;
+        background-color: #121830;
+        color: white;
+    }
+
+    .pastPresentations{
+        width: auto;
+        height: auto;
+        margin-left: 60px;
+        margin-top: 120px;
+        position: absolute;
+    }
+
+    .pastPresentations img{
+        width: 350px;
+        height: auto;
+        margin-right: 100px;
+        border: 1px solid;
+        box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 25px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .pastPresentations img:hover, .btnCreate {
+        transform: scale(1.05); /* Scale the image on hover */
+    }
